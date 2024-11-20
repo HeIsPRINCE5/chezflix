@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+:root{
+    --primary-color: #000;
+    --secondary-color:#fff;
+    --main-color: #ff7200;
+    --style-color: #403a83;
+}
+
+.dark-theme{
+    --primary-color:#fff;
+    --secondary-color:#fff;
+    --main-color: #151516;
+}
+body{
+    background: var(--primary-color);
+}
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:  var(--primary-color);
+    height: 60px;
+    z-index: 100;
+}
+.logo{
+    position: absolute;
+    color: var(--style-color);
+    font-size: 20px;
+    margin-left: 2.7em;
+    margin-top: -10px;
+}
+
+.slidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    padding: 5px 1px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 100;
+    border: 1px ;
+}
+.slidebar:hover{
+    width: 300px;
+}
+.slidebar ul{
+    position: relative;
+    height: 100vh;
+}
+.slidebar ul li{
+    list-style: none;
+}
+.slidebar ul li:hover{
+    background: #3e387a;
+    border-radius: 5px;
+
+}
+.slidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.slidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 45px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    top: 5px;
+}
+.slidebar ul li a .text{
+    position: relative;
+    margin-left: 20px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.slidebar ul li a .text:hover{
+    color: var(--primary-color);
+}
+.slidebar ul li.log{
+    margin-bottom: 50px;
+}
+.slidebar ul li.log span{
+    color:var(--secondary-color);
+}
+.slidebar ul li.log:hover{
+    background: none;
+}
+.slidebar ul li.log span:hover{
+    color: var(--secondary-color);
+}
+.slidebar ul li.log .icon{
+    font-size: 1.2em;
+    color: var(--primary-color);
+    background: #3e387a;
+    border-radius: 5px;
+    height: 7vh;
+    margin-top: -10px;
+}
+.slidebar ul li.log .text{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.slidebar ul li.search-box input{
+    width: 15em;
+}
+.slidebar ul li.search-box{
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+.slidebar .search-box:hover{
+    color: var(--primary-color);
+}
+.bottom{
+    margin-top: 130px;
+}
+
+.contain{
+    position: relative;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem !important;
+    margin-left: 3.2em;
+}
+.contain img{
+    position: absolute;
+    width: 80em;
+    height: 30em;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+    z-index: -1;
+    overflow: hidden;
+}
+.write-up h2{
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 5em;
+    font-size: 50px;
+}
+.write-up p{
+    color: #fff;
+    margin-left: 20px;
+}
+.rating{
+    position: absolute;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn{
+    color: var(--main-color);
+    margin-left: 5em;
+    margin-top: -20px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.btn span{
+    color: var(--main-color);
+}
+.btn p{
+    color: #fff;
+    margin-top: -3.2em;
+    font-size: 18px;
+    margin-left: 2.5em;
+}
+.cap{
+    color: #fff;
+    margin-left: 3.5em;
+    margin-top: 4em;
+}
+.cap h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.cap p{
+    margin-top: 0.5em;
+    line-height: 25px;
+}
+.mov{
+    color: #fff;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.pic{
+    position: absolute;
+    margin-left: 3.5em;
+    margin-top: 1em;
+}
+.pic p{
+    color: #fff;
+}
+.pic p span{
+    margin-left: 1em;
+}
+.pic img{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.pic1{
+    position: absolute;
+    margin-left: 12em;
+    margin-top: 1em;
+}
+.pic1 p{
+    color: #fff;
+}
+.pic1 p span{
+    margin-left: 1em;
+}
+.pic1 img{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.pic2{
+    position: absolute;
+    margin-left: 20.5em;
+    margin-top: 1em;
+}
+.pic2 p{
+    color: #fff;
+}
+.pic2 p span{
+    margin-left: 1em;
+}
+.pic2 img{
+    display: flex;
+    align-items: center;
+}
+
+.pic3{
+    position: absolute;
+    margin-left: 29em;
+    margin-top: 1em;
+}
+.pic3 p{
+    color: #fff;
+}
+.pic3 p span{
+    margin-left: 1em;
+}
+.pic3 img{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.pic4{
+    position: absolute;
+    margin-left: 37.5em;
+    margin-top: 1em;
+}
+.pic4 p{
+    color: #fff;
+}
+.pic4 p span{
+    margin-left: 1em;
+}
+.pic4 img{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.pic5{
+    position: absolute;
+    margin-left: 46em;
+    margin-top: 1em;
+}
+.pic5 p{
+    color: #fff;
+}
+.pic5 p span{
+    margin-left: 1em;
+}
+.pic5 img{
+    display: flex;
+    align-items: center;
+}
+
+.wow{
+    position: relative;
+    margin-left: 12em;
+}
+.stay{
+    width: 60em;
+    height: 30em;
+    margin-left: 12em;
+    margin-top: 3em;
+    border: 2px solid #fff;
+}
+.rrr{
+    color: #fff;
+    margin-top: 8em;
+    font-weight: bold;
+    font-size: 30px;
+}
